@@ -135,17 +135,13 @@ First, clone the repo where you want:
 ```bash
 git clone https://github.com/pastefile/pastefile.git
 ```
-Go to the `extra/Docker` directory :
-```bash
-cd pastefile/extra/Docker
-```
 Build the image:
 ```bash
 docker build --rm -t pastefile ./
 ```
 You can then run a container:
 ```bash
-docker run -t -d -i --name=pastefile pastefile
+docker run -d --name=pastefile pastefile
 ```
 this is the easiest way to get a pastefile application running quickly.
 
